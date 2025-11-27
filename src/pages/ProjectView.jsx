@@ -63,7 +63,7 @@ const ProjectView = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                     {project.tech.map((t, i) => {
-                        const iconUrl = techIcons[t]; // Look up icon
+                        const iconUrl = techIcons[t];
                         return (
                             <div key={i} className="px-3 py-1.5 bg-[#282828] text-white text-xs font-bold rounded-full border border-white/10 flex items-center gap-2">
                                 {iconUrl && <img src={iconUrl} alt={t} className="w-3 h-3 opacity-90" />}
@@ -79,17 +79,20 @@ const ProjectView = () => {
         <div className="lg:col-span-2 flex flex-col gap-4 order-1 lg:order-2">
             
             {/* Main Stage */}
-            <div className={`w-full aspect-video ${project.img} rounded-xl shadow-2xl flex items-center justify-center text-gray-500 font-bold text-xl border border-white/10 transition-all duration-500`}>
-                [ Screenshot {activeImage + 1} ]
+            <div className={`w-full aspect-video ${project.gallery ? project.gallery[activeImage] : project.img} rounded-xl shadow-2xl flex items-center justify-center text-gray-500 font-bold text-xl border border-white/10 transition-all duration-500`}>
+                {/* Only show text if image fails to load or is a color placeholder */}
+                <span className="opacity-0 hover:opacity-100 transition">[Screenshot {activeImage + 1}]</span>
             </div>
 
             {/* Centered Thumbnails */}
             <div className="flex justify-center gap-3 overflow-x-auto pb-2 no-scrollbar">
-                {[0, 1, 2].map((idx) => (
+                {/* Check if gallery exists, otherwise fallback to empty array */}
+                {(project.gallery || []).map((shot, idx) => (
                     <div 
                         key={idx}
                         onClick={() => setActiveImage(idx)}
-                        className={`w-24 aspect-video ${project.img} rounded cursor-pointer transition-all duration-300 border-2 ${activeImage === idx ? 'border-green-500 opacity-100 scale-105' : 'border-transparent opacity-50 hover:opacity-100'}`}
+                        // Use the specific screenshot for the thumbnail too
+                        className={`w-24 aspect-video ${shot} rounded cursor-pointer transition-all duration-300 border-2 ${activeImage === idx ? 'border-green-500 opacity-100 scale-105' : 'border-transparent opacity-50 hover:opacity-100'}`}
                     ></div>
                 ))}
             </div>

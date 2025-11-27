@@ -28,7 +28,11 @@ const RightPanel = () => {
         
         <div className="flex items-center gap-4">
              <div className="w-14 h-14 bg-[#282828] rounded-full flex items-center justify-center text-gray-500 font-bold overflow-hidden shadow-lg border border-white/10">
-                [IMG]
+                <img 
+                    src="/images/profile.jpeg" 
+                    alt="Profile" 
+                    className="w-14 h-14 rounded-full object-cover border border-white/10 shadow-lg" 
+                    />
              </div>
              <div>
                  <h2 className="font-bold text-base text-white">About Akeyla</h2>
@@ -37,7 +41,7 @@ const RightPanel = () => {
         </div>
         
         <p className="text-gray-400 text-xs leading-relaxed">
-            CS Student & Full Stack Dev. Building cloud solutions and snappy UIs.
+            Computer Science student with a strong background in cloud engineering and full-stack developing. Quick to adapt, creative, and driven to bring ideas to life.
         </p>
 
         {/* NEW: Stats Grid to fill space */}

@@ -57,9 +57,13 @@ export const projects = [
     tagline: "The 'Hinge' for Recruiters",
     type: "iOS • Swift", 
     year: "2025", 
-    // Example of how your path will look later:
-    img: "bg-gray-800", 
-    description: "An iOS app that modernizes career fairs by replacing paper resumes with digital profiles. Candidates join digital queues via a 6-digit code, while recruiters review applicants using a rapid 'swipe-left/right' interface to streamline hiring decisions.",
+    img: "bg-[url('/images/relay/relay.png')] bg-cover bg-center", 
+    gallery: [
+        "bg-[url('/images/relay/relay-1.png')] bg-cover bg-center",
+        "bg-[url('/images/relay/relay-2.png')] bg-cover bg-center",
+        "bg-[url('/images/relay/relay-3.png')] bg-cover bg-center"
+    ],
+    description: "An iOS app that modernizes career fairs by replacing paper resumes with digital profiles. Candidates join digital queues via a 6-digit code.",
     tech: ["iOS", "Swift", "SwiftUI", "Firebase", "MVVM"]
   },
   { 
@@ -68,8 +72,13 @@ export const projects = [
     tagline: "AI-Powered Cooking Assistant",
     type: "React • AI", 
     year: "2024", 
-    img: "bg-green-900", 
-    description: "A smart recipe generator that curates meal options based on available ingredients, dietary restrictions, and allergies. Features a built-in health meter and cooking timer.",
+    img: "bg-[url('/images/munch/munch.png')] bg-cover bg-center", 
+    gallery: [
+        "bg-[url('/images/munch/munch-1.png')] bg-cover bg-center",
+        "bg-[url('/images/munch/munch-2.png')] bg-cover bg-center",
+        "bg-[url('/images/munch/munch-3.png')] bg-cover bg-center"
+    ],
+    description: "A smart recipe generator that curates meal options based on available ingredients, dietary restrictions, and allergies.",
     tech: ["React", "OpenAI API", "Node.js", "CSS"]
   },
   { 
@@ -78,17 +87,27 @@ export const projects = [
     tagline: "On-Demand Tutor Booking",
     type: "Android • Java", 
     year: "2025", 
-    img: "bg-blue-900", 
-    description: "A native Android application connecting students with tutors. Tutors can manage availability via a color-coded schedule grid, while students can book sessions and chat in real-time.",
+    img: "bg-[url('/images/tutorverse/tutorverse.png')] bg-cover bg-center", 
+    gallery: [
+        "bg-[url('/images/relay-1.png')] bg-cover bg-center",
+        "bg-[url('/images/relay-2.png')] bg-cover bg-center",
+        "bg-[url('/images/relay-3.png')] bg-cover bg-center"
+    ],
+    description: "A native Android application connecting students with tutors. Tutors can manage availability via a color-coded schedule grid.",
     tech: ["Android", "Java", "Firebase", "Material Design"]
   },
   { 
     id: 4, 
-    title: "Inventory Manager", 
+    title: "Depot", 
     tagline: "Web-Based Stock System",
     type: "Java • MySQL", 
     year: "2024", 
-    img: "bg-purple-900", 
+    img: "bg-[url('/images/depot/inventory.png')] bg-cover bg-center", 
+    gallery: [
+        "bg-[url('/images/depot/inventory-1.png')] bg-cover bg-center",
+        "bg-[url('/images/depot/inventory-2.png')] bg-cover bg-center",
+        "bg-[url('/images/depot/inventory-3.png')] bg-cover bg-center"
+    ],
     description: "A robust web application for tracking product stock, managing supplier relationships, and processing orders.",
     tech: ["Java", "JSP", "Servlets", "MySQL"]
   },
