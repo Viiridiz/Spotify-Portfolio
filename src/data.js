@@ -48,6 +48,13 @@ export const skills = [
   { id: 2, name: "JavaScript", icon: techIcons["JavaScript"] },
   { id: 3, name: "Swift", icon: techIcons["Swift"] },
   { id: 4, name: "AWS", icon: techIcons["AWS"] },
+  { id: 5, name: "C#", icon: techIcons["C#"] },
+  { id: 7, name: "Node.js", icon: techIcons["Node.js"] },
+  { id: 8, name: "Firebase", icon: techIcons["Firebase"] },
+  { id: 9, name: "SQL", icon: techIcons["SQL"] },
+  { id: 10, name: "Git", icon: techIcons["Git"] },
+  { id: 11, name: "Docker", icon: techIcons["Docker"] },
+  { id: 12, name: "Python", icon: techIcons["Python"] }
 ];
 
 // PROJECTS
@@ -90,9 +97,9 @@ export const projects = [
     year: "2025", 
     img: "bg-[url('/images/tutorverse/tutorverse.png')] bg-cover bg-center", 
     gallery: [
-        "bg-[url('/images/relay-1.png')] bg-cover bg-center",
-        "bg-[url('/images/relay-2.png')] bg-cover bg-center",
-        "bg-[url('/images/relay-3.png')] bg-cover bg-center"
+        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center",
+        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center",
+        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center"
     ],
     description: "A native Android application connecting students with tutors. Tutors can manage availability via a color-coded schedule grid.",
     tech: ["Android", "Java", "Firebase", "Material Design"]
