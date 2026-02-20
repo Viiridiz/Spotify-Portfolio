@@ -57,6 +57,12 @@ const Home = () => {
                 
                 <div className="flex flex-col md:flex-row md:items-center gap-4 text-gray-300 font-medium text-sm">
                     <span>{profile.role} • {profile.location}</span>
+
+                    {/* the new bio text */}
+                    <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
+                        {profile.bio}
+                    </p>
+                    
                     <div className="flex items-center gap-2">
                         <button onClick={openModal} className="border border-gray-500 hover:border-white hover:text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
                             <Mail size={12} /> Connect
