@@ -43,7 +43,7 @@ const Home = () => {
     <div className="h-full flex flex-col">
         
         {/* HERO */}
-        <div className="relative w-full h-[280px] flex items-end p-6 flex-shrink-0 group overflow-hidden">
+        <div className="relative w-full h-[400px] flex items-end p-6 md:p-8 flex-shrink-0 group overflow-hidden">
             <div className={`absolute inset-0 ${profile.coverImage} transition-transform duration-500 group-hover:scale-105`}></div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/20 to-transparent"></div>
 
