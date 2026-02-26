@@ -49,7 +49,7 @@ const Home = () => {
 
             <div className="relative z-10 flex flex-col gap-2 w-full max-w-3xl">
                 <div className="flex items-center gap-2 text-xs font-bold text-green-400">
-                    <BadgeCheck fill="currentColor" className="text-black" size={16} />
+                    <BadgeCheck fill="currentColor" className="text-green" size={16} />
                     <span>Verified Student</span>
                 </div>
                 
@@ -64,10 +64,10 @@ const Home = () => {
                     </p>
                     <div className="flex items-center gap-2 mt-1">
                         <button onClick={openModal} className="border border-gray-500 hover:border-white hover:text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
-                            <Mail size={12} /> Connect
+                            <Mail size={20} /> Connect
                         </button>
-                        <a href="https://www.linkedin.com/in/akeyla-shareef/" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Linkedin size={14} /></a>
-                        <a href="https://github.com/Viiridiz" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Github size={14} /></a>
+                        <a href="https://www.linkedin.com/in/akeyla-shareef/" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Linkedin size={20} /></a>
+                        <a href="https://github.com/Viiridiz" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Github size={20} /></a>
                     </div>
                 </div>
             </div>

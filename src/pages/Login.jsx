@@ -10,7 +10,7 @@ const Login = ({ onLogin, isExiting }) => {
       <div className="z-10 flex flex-col items-center gap-8 text-center">
         {/* Logo Icon */}
         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4 shadow-[0_0_50px_rgba(255,255,255,0.2)] animate-slide-up">
-           <Music size={48} className="text-black" />
+           <img src="./images/spotify-logo.png" alt="Spotify" className="w-45 h-15 mb-0 object-contain" />
         </div>
 
         {/* Text */}

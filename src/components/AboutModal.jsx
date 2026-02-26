@@ -42,7 +42,11 @@ const AboutModal = () => {
             {/* Left: Photo */}
             <div className="w-full md:w-1/3 flex flex-col gap-4">
                 <div className="aspect-square bg-[#282828] rounded-lg flex items-center justify-center text-gray-500 font-bold text-xl overflow-hidden">
-                    [PHOTO]
+                    <img 
+                      src="./images/profile.jpg" 
+                      alt="Profile" 
+                      className="aspect-square w-full object-cover rounded-lg border border-white/10" 
+                    />
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 text-xs justify-center font-medium">
                     <MapPin size={14} /> Montreal, QC

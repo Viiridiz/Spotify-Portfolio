@@ -7,6 +7,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-[72px] md:w-[220px] bg-black p-2 flex flex-col gap-2 h-full flex-shrink-0">
+        <img src="./images/spotify-logo.png" alt="Spotify" className="w-8 h-8 object-contain" />
       
       {/* Top Nav */}
       <div className="bg-[#121212] rounded-lg p-4 flex flex-col gap-4">

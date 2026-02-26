@@ -29,7 +29,7 @@ const RightPanel = () => {
         <div className="flex items-center gap-4">
              <div className="w-14 h-14 bg-[#282828] rounded-full flex items-center justify-center text-gray-500 font-bold overflow-hidden shadow-lg border border-white/10">
                 <img 
-                    src="/images/profile.jpeg" 
+                    src="./images/profile.jpg" 
                     alt="Profile" 
                     className="w-14 h-14 rounded-full object-cover border border-white/10 shadow-lg" 
                     />

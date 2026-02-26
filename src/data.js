@@ -97,26 +97,10 @@ export const projects = [
     year: "2025", 
     img: "bg-[url('/images/tutorverse/tutorverse.png')] bg-cover bg-center", 
     gallery: [
-        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center",
-        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center",
-        "bg-[url('/images/tutorverse/tutorverse-1.png')] bg-cover bg-center"
+        "bg-[url('/images/tutorverse/tutorverse-1.jpg')] bg-cover bg-center",
+        "bg-[url('/images/tutorverse/tutorverse-2.png')] bg-cover bg-center"
     ],
     description: "A native Android application connecting students with tutors. Tutors can manage availability via a color-coded schedule grid.",
     tech: ["Android", "Java", "Firebase", "Material Design"]
-  },
-  { 
-    id: 4, 
-    title: "Depot", 
-    tagline: "Web-Based Stock System",
-    type: "Java • MySQL", 
-    year: "2024", 
-    img: "bg-[url('/images/depot/inventory.png')] bg-cover bg-center", 
-    gallery: [
-        "bg-[url('/images/depot/inventory-1.png')] bg-cover bg-center",
-        "bg-[url('/images/depot/inventory-2.png')] bg-cover bg-center",
-        "bg-[url('/images/depot/inventory-3.png')] bg-cover bg-center"
-    ],
-    description: "A robust web application for tracking product stock, managing supplier relationships, and processing orders.",
-    tech: ["Java", "JSP", "Servlets", "MySQL"]
-  },
+  }
 ];
