@@ -72,7 +72,8 @@ export const projects = [
         "bg-[url('/images/relay/relay-3.png')] bg-cover bg-center"
     ],
     description: "An iOS app that modernizes career fairs by replacing paper resumes with digital profiles. Candidates join digital queues via a 6-digit code.",
-    tech: ["iOS", "Swift", "SwiftUI", "Firebase", "MVVM"]
+    tech: ["iOS", "Swift", "SwiftUI", "Firebase", "MVVM"],
+    github: "https://github.com/Viiridiz/Relay"
   },
   { 
     id: 2, 
@@ -87,7 +88,8 @@ export const projects = [
         "bg-[url('/images/munch/munch-3.png')] bg-cover bg-center"
     ],
     description: "A smart recipe generator that curates meal options based on available ingredients, dietary restrictions, and allergies.",
-    tech: ["React", "OpenAI API", "Node.js", "CSS"]
+    tech: ["React", "OpenAI API", "Node.js", "CSS"],
+    github: "https://github.com/Viiridiz/Munch"
   },
   { 
     id: 3, 
@@ -101,6 +103,7 @@ export const projects = [
         "bg-[url('/images/tutorverse/tutorverse-2.png')] bg-cover bg-center"
     ],
     description: "A native Android application connecting students with tutors. Tutors can manage availability via a color-coded schedule grid.",
-    tech: ["Android", "Java", "Firebase", "Material Design"]
+    tech: ["Android", "Java", "Firebase", "Material Design"],
+    github: "https://github.com/Rafat-i/TutorVerse"
   }
 ];

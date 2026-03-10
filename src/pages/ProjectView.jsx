@@ -39,14 +39,20 @@ const ProjectView = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        {/* Left Side: Details */}
         <div className="lg:col-span-1 flex flex-col gap-6 order-2 lg:order-1">
             
-            <button className="w-full bg-[#1ed760] text-black font-bold py-2.5 rounded-full hover:scale-105 transition shadow-lg flex items-center justify-center gap-2 text-sm">
-                <Github size={18} /> Source Code
-            </button>
+            {project.github && (
+                <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-[#282828] hover:bg-[#383838] text-white font-bold py-3 rounded-full flex items-center justify-center gap-2 transition duration-200"
+                >
+                    <Github size={18} />
+                    GitHub
+                </a>
+            )}
 
-            {/* Description Card */}
             <div className="bg-[#181818] p-5 rounded-xl border border-white/5">
                 <h3 className="text-white font-bold mb-3 flex items-center gap-2 text-sm">
                     <Layers size={16} className="text-gray-400"/> The Breakdown
