@@ -6,14 +6,13 @@ export const profile = {
   location: "Montreal, QC",
 
   bio: "Computer Science student with a strong background in cloud engineering and full-stack development. Quick to adapt, creative, and driven to bring ideas to life.", 
-  coverImage: "bg-gradient-to-b from-[#3e523f] to-[#121212]", 
+  coverImage: "bg-[url('./images/banner.png')] bg-cover bg-center",
 };
 
 // ICONS
 export const techIcons = {
-  // Languages
   "Swift": "https://cdn.simpleicons.org/swift/white",
-  "C#": "https://cdn.simpleicons.org/dotnet/white", // Updated
+  "C#": "https://cdn.simpleicons.org/dotnet/white", 
   "Python": "https://cdn.simpleicons.org/python/white",
   "JavaScript": "https://cdn.simpleicons.org/javascript/white",
   "HTML": "https://cdn.simpleicons.org/html5/white",

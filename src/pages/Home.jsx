@@ -62,12 +62,16 @@ const Home = () => {
                     <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
                         {profile.bio}
                     </p>
-                    <div className="flex items-center gap-2 mt-1">
-                        <button onClick={openModal} className="border border-gray-500 hover:border-white hover:text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
-                            <Mail size={20} /> Connect
+                    <div className="flex items-center gap-2 mt-2">
+                        <button onClick={openModal} className="border border-gray-500 hover:border-white hover:text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
+                            <Mail size={14} /> Connect
                         </button>
-                        <a href="https://www.linkedin.com/in/akeyla-shareef/" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Linkedin size={20} /></a>
-                        <a href="https://github.com/Viiridiz" target="_blank" className="p-1 border border-gray-500 rounded-full hover:border-white hover:text-white transition"><Github size={20} /></a>
+                        <a href="https://www.linkedin.com/in/akeyla-shareef/" target="_blank" className="border border-gray-500 hover:border-white hover:text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
+                            <Linkedin size={14} /> LinkedIn
+                        </a>
+                        <a href="https://github.com/Viiridiz" target="_blank" className="border border-gray-500 hover:border-white hover:text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition flex items-center gap-2">
+                            <Github size={14} /> GitHub
+                        </a>
                     </div>
                 </div>
             </div>

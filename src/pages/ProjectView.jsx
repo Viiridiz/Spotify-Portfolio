@@ -8,7 +8,6 @@ const ProjectView = () => {
   const navigate = useNavigate();
   const [activeImage, setActiveImage] = useState(0);
 
-  // loose check for string vs number ID
   const project = projects.find(p => p.id == id);
 
   if (!project) return <div className="p-10 text-white">Project not found.</div>;
@@ -16,7 +15,6 @@ const ProjectView = () => {
   return (
     <div className="p-6 pt-4 animate-fade-in h-full overflow-y-auto no-scrollbar pb-24">
       
-      {/* Back Nav */}
       <button 
         onClick={() => navigate(-1)} 
         className="mb-6 flex items-center gap-2 text-gray-400 hover:text-white transition font-bold text-xs uppercase tracking-wider"
@@ -24,7 +22,6 @@ const ProjectView = () => {
         <ArrowLeft size={16} /> Back to Library
       </button>
 
-      {/* Header Info (Smaller) */}
       <div className="flex flex-col gap-2 mb-8">
           <span className="text-green-500 font-bold tracking-widest text-[10px] uppercase">
             {project.type} • {project.year}
@@ -46,7 +43,7 @@ const ProjectView = () => {
                     href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-1 bg-[#282828] hover:bg-[#383838] text-white font-bold py-3 rounded-full flex items-center justify-center gap-2 transition duration-200"
+                    className="w-fit px-8 bg-[#282828] hover:bg-[#383838] text-white font-bold py-3 rounded-full flex items-center gap-2 transition duration-200"
                 >
                     <Github size={18} />
                     GitHub
@@ -62,7 +59,6 @@ const ProjectView = () => {
                 </p>
             </div>
 
-            {/* Tech Stack with Icons */}
             <div className="bg-[#181818] p-5 rounded-xl border border-white/5">
                 <h3 className="text-white font-bold mb-3 flex items-center gap-2 text-sm">
                     <Code size={16} className="text-gray-400"/> The Stack
@@ -81,23 +77,17 @@ const ProjectView = () => {
             </div>
         </div>
 
-        {/* Right Side: Gallery */}
         <div className="lg:col-span-2 flex flex-col gap-4 order-1 lg:order-2">
             
-            {/* Main Stage */}
             <div className={`w-full aspect-video ${project.gallery ? project.gallery[activeImage] : project.img} rounded-xl shadow-2xl flex items-center justify-center text-gray-500 font-bold text-xl border border-white/10 transition-all duration-500`}>
-                {/* Only show text if image fails to load or is a color placeholder */}
                 <span className="opacity-0 hover:opacity-100 transition">[Screenshot {activeImage + 1}]</span>
             </div>
 
-            {/* Centered Thumbnails */}
             <div className="flex justify-center gap-3 overflow-x-auto pb-2 no-scrollbar">
-                {/* Check if gallery exists, otherwise fallback to empty array */}
                 {(project.gallery || []).map((shot, idx) => (
                     <div 
                         key={idx}
                         onClick={() => setActiveImage(idx)}
-                        // Use the specific screenshot for the thumbnail too
                         className={`w-24 aspect-video ${shot} rounded cursor-pointer transition-all duration-300 border-2 ${activeImage === idx ? 'border-green-500 opacity-100 scale-105' : 'border-transparent opacity-50 hover:opacity-100'}`}
                     ></div>
                 ))}
