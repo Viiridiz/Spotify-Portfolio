@@ -6,7 +6,7 @@ export const profile = {
   location: "Montreal, QC",
 
   bio: "Computer Science student with a strong background in cloud engineering and full-stack development. Quick to adapt, creative, and driven to bring ideas to life.", 
-  coverImage: "bg-[url('./images/banner.png')] bg-cover bg-center",
+  coverImage: "bg-[url('/Spotify-Portfolio/images/banner.png')] bg-cover bg-center",
 };
 
 // ICONS
